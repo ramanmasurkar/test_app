@@ -30,7 +30,7 @@ group :development do
   # Use ActiveModel has_secure_password
   # gem 'bcrypt', '~> 3.1.7'
   gem 'pry'
-  gem 'whenever', require: false
+  # gem 'whenever', require: false
   # Use unicorn as the app server
   # gem 'unicorn'
   gem 'rails_admin'
