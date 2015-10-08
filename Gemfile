@@ -33,6 +33,7 @@ group :development do
   # gem 'whenever', require: false
   # Use unicorn as the app server
   # gem 'unicorn'
+  gem 'i18n', '0.6.11'
   gem 'rails_admin'
   gem 'devise'
   gem 'dropbox-sdk'
