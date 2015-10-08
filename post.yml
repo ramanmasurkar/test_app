@@ -1,0 +1,6 @@
+post:
+  index: "this is index page"
+  new: "this is new page"
+  edit: "this is edit page"
+  delete: "this is delete page"
+  show: "this is show page"
