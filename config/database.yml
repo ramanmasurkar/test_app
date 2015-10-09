@@ -3,7 +3,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: postgresql
+  username: root
   password: root
   socket: /var/run/mysqld/mysqld.sock
 
