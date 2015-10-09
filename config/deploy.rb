@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-before :deploy, :deploy_from_local_repo
+# before :deploy, :deploy_from_local_repo
 
 set :application, 'test_app'
 
@@ -10,7 +10,7 @@ set :application, 'test_app'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/test_app'
-
+set :repository, 'https://github.com/ramanmasurkar/test_app.git'
 # Default value for :scm is :git
 set :scm, :git
 
@@ -48,13 +48,13 @@ namespace :deploy do
 
 end
 
-task :deploy_from_local_repo do
-  set :repo_url,  "file:///tmp/.git"
-  run_locally do
-    execute "tar -zcvf /tmp/repo.tgz .git"
-  end
-  on roles(:all) do
-    upload! '/tmp/repo.tgz', '/tmp/repo.tgz'
-    execute 'tar -zxvf /tmp/repo.tgz -C /tmp'
-  end
-end
+# task :deploy_from_local_repo do
+#   set :repo_url,  "file:///tmp/.git"
+#   run_locally do
+#     execute "tar -zcvf /tmp/repo.tgz .git"
+#   end
+#   on roles(:all) do
+#     upload! '/tmp/repo.tgz', '/tmp/repo.tgz'
+#     execute 'tar -zxvf /tmp/repo.tgz -C /tmp'
+#   end
+# end
