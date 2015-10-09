@@ -10,7 +10,7 @@ set :application, 'test_app'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/test_app'
-set :repository, 'https://github.com/ramanmasurkar/test_app.git'
+set :repo_url, 'https://github.com/ramanmasurkar/test_app.git'
 # Default value for :scm is :git
 set :scm, :git
 
