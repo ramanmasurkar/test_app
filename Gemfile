@@ -40,7 +40,9 @@ group :development do
   gem 'kaminari'
   gem 'faker'
   gem 'capistrano'
+  gem 'capistrano-bundler'
   gem 'capistrano-rails'
+  gem 'capistrano-rvm'
   gem 'jquery-datatables-rails'
 end
 # Use Capistrano for deployment
