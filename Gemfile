@@ -33,6 +33,7 @@ group :development do
   # gem 'whenever', require: false
   # Use unicorn as the app server
   # gem 'unicorn'
+  gem 'quiet_assets'
   gem 'i18n'
   gem 'rails_admin'
   gem 'devise'
