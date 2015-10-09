@@ -1,10 +1,13 @@
 # Load DSL and set up stages
 require 'capistrano/setup'
 require 'capistrano/deploy'
-require 'capistrano/bundler' # Rails needs Bundler, right?
+require 'capistrano/rvm'
+# require 'capistrano/rbenv'
+# require 'capistrano/chruby'
+require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
-require 'capistrano/rails'
+# require 'capistrano/passenger'
 # Include default deployment tasks
 
 # Include tasks from other gems included in your Gemfile
