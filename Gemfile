@@ -36,7 +36,7 @@ group :development do
   gem 'quiet_assets'
   gem 'i18n'
   gem 'rails_admin'
-  gem 'devise'
+  gem 'devise', github: 'plataformatec/devise'
   gem 'dropbox-sdk'
   gem 'kaminari'
   gem 'faker'
